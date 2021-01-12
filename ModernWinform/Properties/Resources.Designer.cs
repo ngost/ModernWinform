@@ -61,6 +61,15 @@ namespace ModernWinform.Properties {
         }
         
         /// <summary>
+        ///   System.IO.MemoryStream과(와) 유사한 System.IO.UnmanagedMemoryStream 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream button_default {
+            get {
+                return ResourceManager.GetStream("button_default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         internal static System.Drawing.Bitmap close_window_512 {
@@ -83,6 +92,16 @@ namespace ModernWinform.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap maximize_window_128 {
+            get {
+                object obj = ResourceManager.GetObject("maximize-window-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize_window_512 {
             get {
                 object obj = ResourceManager.GetObject("maximize-window-512", resourceCulture);
@@ -93,9 +112,29 @@ namespace ModernWinform.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap minimize_window_128 {
+            get {
+                object obj = ResourceManager.GetObject("minimize-window-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap minimize_window_512 {
             get {
                 object obj = ResourceManager.GetObject("minimize-window-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_mark_5_128 {
+            get {
+                object obj = ResourceManager.GetObject("x-mark-5-128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

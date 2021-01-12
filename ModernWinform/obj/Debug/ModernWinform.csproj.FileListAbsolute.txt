@@ -2,9 +2,12 @@ C:\Users\Lee\source\repos\ModernWinform\ModernWinform\bin\Debug\ModernWinform.ex
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\bin\Debug\ModernWinform.exe
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\bin\Debug\ModernWinform.pdb
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.csprojAssemblyReference.cache
-C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.Form1.resources
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.Properties.Resources.resources
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.csproj.GenerateResource.cache
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.csproj.CoreCompileInputs.cache
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.exe
 C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.pdb
+C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.Form_Main.resources
+C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.Form_StopWatch.resources
+C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.Form_CountDown.resources
+C:\Users\Lee\source\repos\ModernWinform\ModernWinform\obj\Debug\ModernWinform.Form_Help.resources

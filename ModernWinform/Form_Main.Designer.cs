@@ -1,7 +1,7 @@
 ﻿
 namespace ModernWinform
 {
-    partial class Form1
+    partial class Form_Main
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -31,34 +31,34 @@ namespace ModernWinform
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button_countdown = new System.Windows.Forms.Button();
+            this.button_stopwatch = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel_child_form = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.minimize_box = new System.Windows.Forms.PictureBox();
             this.maximize_box = new System.Windows.Forms.PictureBox();
             this.exit_box = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel_child_form.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximize_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_box)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel3.BackColor = System.Drawing.Color.OrangeRed;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.pictureBox2);
@@ -76,77 +76,23 @@ namespace ModernWinform
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(25, 6);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(1);
-            this.label3.Size = new System.Drawing.Size(155, 20);
+            this.label3.Size = new System.Drawing.Size(171, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Simple StopWatch";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::ModernWinform.Properties.Resources.image_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // minimize_box
-            // 
-            this.minimize_box.BackColor = System.Drawing.Color.Transparent;
-            this.minimize_box.Dock = System.Windows.Forms.DockStyle.Right;
-            this.minimize_box.Image = global::ModernWinform.Properties.Resources.minimize_window_512;
-            this.minimize_box.Location = new System.Drawing.Point(1327, 0);
-            this.minimize_box.Name = "minimize_box";
-            this.minimize_box.Padding = new System.Windows.Forms.Padding(5);
-            this.minimize_box.Size = new System.Drawing.Size(25, 25);
-            this.minimize_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.minimize_box.TabIndex = 2;
-            this.minimize_box.TabStop = false;
-            this.minimize_box.Click += new System.EventHandler(this.minimize_box_Click);
-            // 
-            // maximize_box
-            // 
-            this.maximize_box.BackColor = System.Drawing.Color.Transparent;
-            this.maximize_box.Dock = System.Windows.Forms.DockStyle.Right;
-            this.maximize_box.Image = global::ModernWinform.Properties.Resources.maximize_window_512;
-            this.maximize_box.Location = new System.Drawing.Point(1352, 0);
-            this.maximize_box.Name = "maximize_box";
-            this.maximize_box.Padding = new System.Windows.Forms.Padding(5);
-            this.maximize_box.Size = new System.Drawing.Size(25, 25);
-            this.maximize_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.maximize_box.TabIndex = 1;
-            this.maximize_box.TabStop = false;
-            this.maximize_box.Click += new System.EventHandler(this.maximize_click);
-            // 
-            // exit_box
-            // 
-            this.exit_box.BackColor = System.Drawing.Color.Transparent;
-            this.exit_box.Dock = System.Windows.Forms.DockStyle.Right;
-            this.exit_box.Image = global::ModernWinform.Properties.Resources.close_window_512;
-            this.exit_box.Location = new System.Drawing.Point(1377, 0);
-            this.exit_box.Name = "exit_box";
-            this.exit_box.Padding = new System.Windows.Forms.Padding(5);
-            this.exit_box.Size = new System.Drawing.Size(25, 25);
-            this.exit_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.exit_box.TabIndex = 0;
-            this.exit_box.TabStop = false;
-            this.exit_box.Click += new System.EventHandler(this.exit_box_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button_countdown);
+            this.panel1.Controls.Add(this.button_stopwatch);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -157,7 +103,7 @@ namespace ModernWinform
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button5.FlatAppearance.BorderSize = 0;
@@ -172,46 +118,49 @@ namespace ModernWinform
             this.button5.Text = "Help";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button_help_click);
             // 
-            // button4
+            // button_countdown
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(0, 238);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(295, 86);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Count Down";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.button_countdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.button_countdown.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_countdown.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_countdown.FlatAppearance.BorderSize = 0;
+            this.button_countdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_countdown.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_countdown.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_countdown.Location = new System.Drawing.Point(0, 238);
+            this.button_countdown.Name = "button_countdown";
+            this.button_countdown.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button_countdown.Size = new System.Drawing.Size(295, 86);
+            this.button_countdown.TabIndex = 6;
+            this.button_countdown.Text = "Count Down";
+            this.button_countdown.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_countdown.UseVisualStyleBackColor = false;
+            this.button_countdown.Click += new System.EventHandler(this.button_countdown_click);
             // 
-            // button3
+            // button_stopwatch
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(0, 152);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(295, 86);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Stop Watch";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.button_stopwatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.button_stopwatch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_stopwatch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_stopwatch.FlatAppearance.BorderSize = 0;
+            this.button_stopwatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_stopwatch.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button_stopwatch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button_stopwatch.Location = new System.Drawing.Point(0, 152);
+            this.button_stopwatch.Name = "button_stopwatch";
+            this.button_stopwatch.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button_stopwatch.Size = new System.Drawing.Size(295, 86);
+            this.button_stopwatch.TabIndex = 5;
+            this.button_stopwatch.Text = "Stop Watch";
+            this.button_stopwatch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_stopwatch.UseVisualStyleBackColor = false;
+            this.button_stopwatch.Click += new System.EventHandler(this.button_stopwatch_click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderSize = 0;
@@ -226,6 +175,7 @@ namespace ModernWinform
             this.button2.Text = "Home";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button_home_click);
             // 
             // label2
             // 
@@ -241,17 +191,17 @@ namespace ModernWinform
             this.label2.Text = "Menu";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // panel_child_form
             // 
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(295, 27);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1109, 846);
-            this.panel2.TabIndex = 6;
+            this.panel_child_form.Controls.Add(this.label5);
+            this.panel_child_form.Controls.Add(this.label4);
+            this.panel_child_form.Controls.Add(this.pictureBox1);
+            this.panel_child_form.Controls.Add(this.label1);
+            this.panel_child_form.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_child_form.Location = new System.Drawing.Point(295, 27);
+            this.panel_child_form.Name = "panel_child_form";
+            this.panel_child_form.Size = new System.Drawing.Size(1109, 846);
+            this.panel_child_form.TabIndex = 6;
             // 
             // label5
             // 
@@ -275,18 +225,6 @@ namespace ModernWinform
             this.label4.Text = "Contect : hm5207@gmail.com";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::ModernWinform.Properties.Resources.image_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(412, 262);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -300,13 +238,80 @@ namespace ModernWinform
             this.label1.Text = "Simple StopWatch";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::ModernWinform.Properties.Resources.image_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(412, 262);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::ModernWinform.Properties.Resources.image_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(1);
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // minimize_box
+            // 
+            this.minimize_box.BackColor = System.Drawing.Color.Transparent;
+            this.minimize_box.Dock = System.Windows.Forms.DockStyle.Right;
+            this.minimize_box.Image = global::ModernWinform.Properties.Resources.minimize_window_128;
+            this.minimize_box.Location = new System.Drawing.Point(1327, 0);
+            this.minimize_box.Name = "minimize_box";
+            this.minimize_box.Padding = new System.Windows.Forms.Padding(5);
+            this.minimize_box.Size = new System.Drawing.Size(25, 25);
+            this.minimize_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minimize_box.TabIndex = 2;
+            this.minimize_box.TabStop = false;
+            this.minimize_box.Click += new System.EventHandler(this.minimize_box_Click);
+            // 
+            // maximize_box
+            // 
+            this.maximize_box.BackColor = System.Drawing.Color.Transparent;
+            this.maximize_box.Dock = System.Windows.Forms.DockStyle.Right;
+            this.maximize_box.Image = global::ModernWinform.Properties.Resources.maximize_window_128;
+            this.maximize_box.Location = new System.Drawing.Point(1352, 0);
+            this.maximize_box.Name = "maximize_box";
+            this.maximize_box.Padding = new System.Windows.Forms.Padding(5);
+            this.maximize_box.Size = new System.Drawing.Size(25, 25);
+            this.maximize_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.maximize_box.TabIndex = 1;
+            this.maximize_box.TabStop = false;
+            this.maximize_box.Click += new System.EventHandler(this.maximize_click);
+            // 
+            // exit_box
+            // 
+            this.exit_box.BackColor = System.Drawing.Color.Transparent;
+            this.exit_box.Dock = System.Windows.Forms.DockStyle.Right;
+            this.exit_box.Image = global::ModernWinform.Properties.Resources.x_mark_5_128;
+            this.exit_box.Location = new System.Drawing.Point(1377, 0);
+            this.exit_box.Name = "exit_box";
+            this.exit_box.Padding = new System.Windows.Forms.Padding(5);
+            this.exit_box.Size = new System.Drawing.Size(25, 25);
+            this.exit_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.exit_box.TabIndex = 0;
+            this.exit_box.TabStop = false;
+            this.exit_box.Click += new System.EventHandler(this.exit_box_Click);
+            // 
+            // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(1404, 873);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel_child_form);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("굴림", 15F);
@@ -314,18 +319,18 @@ namespace ModernWinform
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.MinimumSize = new System.Drawing.Size(1300, 750);
-            this.Name = "Form1";
+            this.Name = "Form_Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel_child_form.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maximize_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_box)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,14 +339,14 @@ namespace ModernWinform
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_countdown;
+        private System.Windows.Forms.Button button_stopwatch;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox exit_box;
         private System.Windows.Forms.PictureBox minimize_box;
         private System.Windows.Forms.PictureBox maximize_box;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_child_form;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;

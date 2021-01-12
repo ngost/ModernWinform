@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Media;
 
 namespace ModernWinform
 {
-    public partial class Form1 : Form
+    public partial class Form_Main : Form
     {
-        public Form1()
+        public Form_Main()
         {
             InitializeComponent();
         }
@@ -110,5 +111,56 @@ namespace ModernWinform
             this.WindowState = FormWindowState.Minimized;
         }
 
+        Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_child_form.Controls.Add(childForm);
+            panel_child_form.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+
+
+        private void button_countdown_click(object sender, EventArgs e)
+        {
+            play_click_sound();
+            openChildForm(new Form_CountDown());
+        }
+
+        private void button_stopwatch_click(object sender, EventArgs e)
+        {
+            play_click_sound();
+            openChildForm(new Form_StopWatch());
+        }
+
+        private void button_home_click(object sender, EventArgs e)
+        {
+            play_click_sound();
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+        }
+
+        private void button_help_click(object sender, EventArgs e)
+        {
+            play_click_sound();
+            openChildForm(new Form_Help());
+        }
+
+        private void play_click_sound()
+        {
+
+            new SoundPlayer(Properties.Resources.button_default).Play();
+        }
     }
 }
