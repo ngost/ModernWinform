@@ -63,9 +63,39 @@ namespace ModernWinform.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap close_window_512 {
+            get {
+                object obj = ResourceManager.GetObject("close-window-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap image_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap maximize_window_512 {
+            get {
+                object obj = ResourceManager.GetObject("maximize-window-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_window_512 {
+            get {
+                object obj = ResourceManager.GetObject("minimize-window-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

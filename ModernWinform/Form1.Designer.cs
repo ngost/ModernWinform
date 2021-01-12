@@ -29,33 +29,117 @@ namespace ModernWinform
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.minimize_box = new System.Windows.Forms.PictureBox();
+            this.maximize_box = new System.Windows.Forms.PictureBox();
+            this.exit_box = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximize_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_box)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // panel3
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Font = new System.Drawing.Font("굴림", 40F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(214, 86);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(745, 80);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Simple Stop Watch";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.minimize_box);
+            this.panel3.Controls.Add(this.maximize_box);
+            this.panel3.Controls.Add(this.exit_box);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1404, 27);
+            this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_pannel_mouse_down);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(25, 6);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(1);
+            this.label3.Size = new System.Drawing.Size(155, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Simple StopWatch";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::ModernWinform.Properties.Resources.image_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(1);
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // minimize_box
+            // 
+            this.minimize_box.BackColor = System.Drawing.Color.Transparent;
+            this.minimize_box.Dock = System.Windows.Forms.DockStyle.Right;
+            this.minimize_box.Image = global::ModernWinform.Properties.Resources.minimize_window_512;
+            this.minimize_box.Location = new System.Drawing.Point(1327, 0);
+            this.minimize_box.Name = "minimize_box";
+            this.minimize_box.Padding = new System.Windows.Forms.Padding(5);
+            this.minimize_box.Size = new System.Drawing.Size(25, 25);
+            this.minimize_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.minimize_box.TabIndex = 2;
+            this.minimize_box.TabStop = false;
+            this.minimize_box.Click += new System.EventHandler(this.minimize_box_Click);
+            // 
+            // maximize_box
+            // 
+            this.maximize_box.BackColor = System.Drawing.Color.Transparent;
+            this.maximize_box.Dock = System.Windows.Forms.DockStyle.Right;
+            this.maximize_box.Image = global::ModernWinform.Properties.Resources.maximize_window_512;
+            this.maximize_box.Location = new System.Drawing.Point(1352, 0);
+            this.maximize_box.Name = "maximize_box";
+            this.maximize_box.Padding = new System.Windows.Forms.Padding(5);
+            this.maximize_box.Size = new System.Drawing.Size(25, 25);
+            this.maximize_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.maximize_box.TabIndex = 1;
+            this.maximize_box.TabStop = false;
+            this.maximize_box.Click += new System.EventHandler(this.maximize_click);
+            // 
+            // exit_box
+            // 
+            this.exit_box.BackColor = System.Drawing.Color.Transparent;
+            this.exit_box.Dock = System.Windows.Forms.DockStyle.Right;
+            this.exit_box.Image = global::ModernWinform.Properties.Resources.close_window_512;
+            this.exit_box.Location = new System.Drawing.Point(1377, 0);
+            this.exit_box.Name = "exit_box";
+            this.exit_box.Padding = new System.Windows.Forms.Padding(5);
+            this.exit_box.Size = new System.Drawing.Size(25, 25);
+            this.exit_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.exit_box.TabIndex = 0;
+            this.exit_box.TabStop = false;
+            this.exit_box.Click += new System.EventHandler(this.exit_box_Click);
             // 
             // panel1
             // 
@@ -66,36 +150,28 @@ namespace ModernWinform
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 844);
-            this.panel1.TabIndex = 2;
+            this.panel1.Size = new System.Drawing.Size(295, 846);
+            this.panel1.TabIndex = 5;
             // 
-            // label2
+            // button5
             // 
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(295, 66);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Menu";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(295, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1183, 844);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(0, 324);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(295, 86);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Help";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -104,7 +180,7 @@ namespace ModernWinform
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
+            this.button4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(0, 238);
             this.button4.Name = "button4";
@@ -122,7 +198,7 @@ namespace ModernWinform
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
+            this.button3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(0, 152);
             this.button3.Name = "button3";
@@ -140,7 +216,7 @@ namespace ModernWinform
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
+            this.button2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(0, 66);
             this.button2.Name = "button2";
@@ -150,54 +226,103 @@ namespace ModernWinform
             this.button2.Text = "Home";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button5
+            // label2
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(0, 324);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(295, 86);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Help";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(295, 66);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Menu";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(295, 27);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1109, 846);
+            this.panel2.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(373, 719);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(383, 32);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Made by easyJin, South Korea";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(405, 774);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(314, 32);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Contect : hm5207@gmail.com";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::ModernWinform.Properties.Resources.image_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(449, 261);
+            this.pictureBox1.Location = new System.Drawing.Point(412, 262);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 300);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 25F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(193, 87);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(745, 80);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Simple StopWatch";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(1478, 844);
+            this.ClientSize = new System.Drawing.Size(1404, 873);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Font = new System.Drawing.Font("굴림", 15F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximumSize = new System.Drawing.Size(1920, 1080);
-            this.MinimumSize = new System.Drawing.Size(1000, 750);
+            this.MinimumSize = new System.Drawing.Size(1300, 750);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximize_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_box)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -206,15 +331,23 @@ namespace ModernWinform
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox exit_box;
+        private System.Windows.Forms.PictureBox minimize_box;
+        private System.Windows.Forms.PictureBox maximize_box;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
